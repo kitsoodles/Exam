@@ -2,6 +2,9 @@
  
 First, the main shader that's used in this project is a toon shader. This works by taking a ramp texture, and assigning different levels of shadow to the different colours shown on the ramp. instead of using a smooth transition between the shadow, it instead only takes certain steps and renders those instead. This way, it gives that cell shaded effect.
 
+in flow chart form, this is how its done:
+Define perameters -> calculate different levels of shadow based on ramp texture-> only render the steps and not the in between shades -> apply ramp texture to corresponding shadows to change their colours -> final render
+
 ![image](https://user-images.githubusercontent.com/98484257/233701303-86cb1c58-22ba-4523-abe3-f16416c55b56.png)
 
 What's added on this shader is that there's also a rim light effect as well as potential for an outline. The scene we were given is very hand drawn, and by adding these two effects this would increase the 'cartoon' appeal that the original pixel art has, but in a 3D setting. 
